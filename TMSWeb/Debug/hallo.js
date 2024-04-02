@@ -56460,12 +56460,14 @@ rtl.module("Unit1",["System","SysUtils","Classes","JS","Web","WEBLib.Graphics","
       this.WebLabel1 = null;
       this.WebButton1 = null;
       this.WebEdit1 = null;
+      this.WebLabel2 = null;
     };
     this.$final = function () {
       this.WebPanel1 = undefined;
       this.WebLabel1 = undefined;
       this.WebButton1 = undefined;
       this.WebEdit1 = undefined;
+      this.WebLabel2 = undefined;
       pas["WEBLib.Forms"].TForm.$final.call(this);
     };
     this.WebButton1Click = function (Sender) {
@@ -56477,12 +56479,15 @@ rtl.module("Unit1",["System","SysUtils","Classes","JS","Web","WEBLib.Graphics","
       this.WebLabel1 = pas["WEBLib.StdCtrls"].TLabel.$create("Create$1",[this]);
       this.WebButton1 = pas["WEBLib.StdCtrls"].TButton.$create("Create$1",[this]);
       this.WebEdit1 = pas["WEBLib.StdCtrls"].TEdit.$create("Create$1",[this]);
+      this.WebLabel2 = pas["WEBLib.StdCtrls"].TLabel.$create("Create$1",[this]);
       this.WebPanel1.BeforeLoadDFMValues();
       this.WebLabel1.BeforeLoadDFMValues();
       this.WebButton1.BeforeLoadDFMValues();
       this.WebEdit1.BeforeLoadDFMValues();
+      this.WebLabel2.BeforeLoadDFMValues();
       try {
         this.SetName("Form1");
+        this.SetCaption("Demo Webapplicatie");
         this.SetColor(16777215);
         this.FFont.FCharset = 0;
         this.FFont.SetColor(0);
@@ -56563,11 +56568,25 @@ rtl.module("Unit1",["System","SysUtils","Classes","JS","Web","WEBLib.Graphics","
         this.WebEdit1.SetTabOrder(0);
         this.WebEdit1.SetTop(165);
         this.WebEdit1.SetWidth(432);
+        this.WebLabel2.SetParentComponent(this);
+        this.WebLabel2.SetName("WebLabel2");
+        this.WebLabel2.SetCaption("© 2024 Don Wilbrink");
+        this.WebLabel2.FFont.FCharset = 0;
+        this.WebLabel2.FFont.SetColor(0);
+        this.WebLabel2.FFont.SetHeight(-11);
+        this.WebLabel2.FFont.SetName("Arial");
+        this.WebLabel2.FFont.SetSize(8);
+        this.WebLabel2.FFont.SetStyle({});
+        this.WebLabel2.SetHeight(16);
+        this.WebLabel2.SetLeft(30);
+        this.WebLabel2.SetTop(281);
+        this.WebLabel2.SetWidth(98);
       } finally {
         this.WebPanel1.AfterLoadDFMValues();
         this.WebLabel1.AfterLoadDFMValues();
         this.WebButton1.AfterLoadDFMValues();
         this.WebEdit1.AfterLoadDFMValues();
+        this.WebLabel2.AfterLoadDFMValues();
       };
     };
     rtl.addIntf(this,pas.System.IUnknown);
@@ -56576,6 +56595,7 @@ rtl.module("Unit1",["System","SysUtils","Classes","JS","Web","WEBLib.Graphics","
     $r.addField("WebLabel1",pas["WEBLib.StdCtrls"].$rtti["TLabel"]);
     $r.addField("WebButton1",pas["WEBLib.StdCtrls"].$rtti["TButton"]);
     $r.addField("WebEdit1",pas["WEBLib.StdCtrls"].$rtti["TEdit"]);
+    $r.addField("WebLabel2",pas["WEBLib.StdCtrls"].$rtti["TLabel"]);
     $r.addMethod("WebButton1Click",0,[["Sender",pas.System.$rtti["TObject"]]]);
   });
   this.Form1 = null;

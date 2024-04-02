@@ -1,4 +1,5 @@
 object Form1: TForm1
+  Caption = 'Demo Webapplicatie'
   Color = clWhite
   Font.Charset = ANSI_CHARSET
   Font.Color = clBlack
@@ -78,5 +79,18 @@ object Form1: TForm1
     TabOrder = 0
     Top = 165
     Width = 432
+  end
+  object WebLabel2: TWebLabel
+    Caption = '© 2024 Don Wilbrink'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Arial'
+    Font.Size = 8
+    Font.Style = []
+    Height = 16
+    Left = 30
+    Top = 281
+    Width = 98
   end
 end
